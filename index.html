@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מספרת ג׳קי ודקל | אומנות השיער והטיפוח</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: {
+                            400: '#D4AF37',
+                            500: '#C5A028',
+                            600: '#A38118',
+                        },
+                        dark: {
+                            900: '#0B0C10',
+                            800: '#12141C',
+                            700: '#1F222E',
+                            600: '#2A2E3D',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Heebo', sans-serif;
+            background-color: #0B0C10;
+            color: #E2E8F0;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF099 0%, #D4AF37 50%, #997A15 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-black">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-dark-900/90 backdrop-blur-md border-b border-dark-700">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <img src="https://instagram.ftlv6-1.fna.fbcdn.net/v/t51.2885-19/472996116_3801293823517663_1030345904521806532_n.jpg?_nc_cat=106&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGlj.1080.C3" 
+                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=100&h=100&fit=crop';" 
+                     alt="לוגו מספרת ג׳קי ודקל" 
+                     class="w-12 h-12 rounded-full border border-gold-400/50 object-cover">
+                <div>
+                    <h1 class="text-xl font-bold tracking-wide text-white">ג׳קי & דקל</h1>
+                    <p class="text-xs text-gray-400">מספרת בוטיק משפחתית • מודיעין</p>
+                </div>
+            </div>
+
+            <a href="https://wa.me/972527833122" target="_blank" rel="noopener noreferrer" 
+               class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>הודעה בוואטסאפ</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 md:py-24 px-4 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-radial from-gold-500/10 via-transparent to-transparent opacity-50 pointer-events-none"></div>
+        <div class="max-w-3xl mx-auto space-y-6 relative z-10">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-dark-700 text-gold-400 border border-gold-400/20 text-sm font-medium tracking-wide">
+                מסורת של איכות • מעל 13 שנה
+            </span>
+            <h2 class="text-4xl sm:text-6xl font-black text-white leading-tight">
+                חוויית תספורת וטיפוח <br>
+                <span class="gold-gradient-text">ברמה הגבוהה ביותר</span>
+            </h2>
+            <p class="text-lg text-gray-300 font-light max-w-xl mx-auto">
+                מספרה משפחתית של אב ובן לצד צוות ספרים מקצועי. שירות אדיב, יחס אישי ומחירים ללא תחרות. 
+                <span class="block font-medium text-white mt-1">אין צורך בתור – פשוט מגיעים!</span>
+            </p>
+
+            <div class="pt-4 flex flex-col items-center gap-3 justify-center">
+                <a href="https://wa.me/972527833122" target="_blank" rel="noopener noreferrer" 
+                   class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-10 py-3.5 rounded-xl transition-all shadow-lg shadow-emerald-900/20">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    <span>הודעה בוואטסאפ</span>
+                </a>
+
+                <div class="flex items-center gap-2 text-gray-300 font-medium text-sm sm:text-base pt-2">
+                    <i data-lucide="phone" class="w-4 h-4 text-gold-400"></i>
+                    <span>לבירורים בטלפון: <strong class="text-white">055-9704974</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Grid -->
+    <section class="py-12 bg-dark-800/50 border-y border-dark-700">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-2xl sm:text-3xl font-bold text-white mb-2">מחירון ושירותים</h3>
+                <p class="text-gray-400">שירות פרימיום במחירים ההוגנים ביותר</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-dark-800 p-6 rounded-2xl border border-dark-700 hover:border-gold-400/40 transition-all duration-300 relative group">
+                    <div class="w-12 h-12 bg-gold-400/10 rounded-xl flex items-center justify-center text-gold-400 mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="scissors" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-1">תספורת גבר</h4>
+                    <p class="text-gray-400 text-sm mb-4">עיצוב שיער מקצועי בהתאמה אישית</p>
+                    <div class="text-2xl font-black text-gold-400">60 ₪</div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-dark-800 p-6 rounded-2xl border border-dark-700 hover:border-gold-400/40 transition-all duration-300 relative group">
+                    <div class="w-12 h-12 bg-gold-400/10 rounded-xl flex items-center justify-center text-gold-400 mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="smile" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-1">תספורת ילד</h4>
+                    <p class="text-gray-400 text-sm mb-4">יחס סבלני, חם ואדיב לילדים</p>
+                    <div class="text-2xl font-black text-gold-400">60 ₪</div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-dark-800 p-6 rounded-2xl border border-gold-400/30 gold-border-glow transition-all duration-300 relative group">
+                    <span class="absolute -top-3 right-4 bg-gold-400 text-black text-xs font-bold px-3 py-1 rounded-full">הטבה מיוחדת</span>
+                    <div class="w-12 h-12 bg-gold-400/10 rounded-xl flex items-center justify-center text-gold-400 mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-1">שעווה כללית</h4>
+                    <p class="text-gray-400 text-sm mb-4">טיפוח אוזניים, נחיריים ועיצוב זקן</p>
+                    <div class="text-2xl font-black text-emerald-400">חינם!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hair Design Course Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto bg-gradient-to-r from-dark-800 via-dark-700 to-dark-800 border border-gold-400/30 rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden">
+            <div class="relative z-10 space-y-4">
+                <span class="bg-gold-400 text-black font-extrabold text-xs tracking-wider uppercase px-3 py-1 rounded-full inline-block">חדש במספרה</span>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">הצטרפו לקורס עיצוב שיער</h3>
+                <p class="text-gray-300 text-lg max-w-2xl mx-auto font-light">
+                    תתחילו את המסע שלכם לעבר ההצלחה בעולם הספרות. אל תחכו להזדמנות – תצרו אותה בעצמכם!
+                </p>
+                <div class="pt-4 text-gold-400 text-xl font-bold flex items-center justify-center gap-2">
+                    <i data-lucide="phone-call" class="w-5 h-5"></i>
+                    <span>לפרטים והרשמה התקשרו: 055-9704974</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location, Opening Hours & Contact Section -->
+    <section class="py-16 bg-dark-900 border-t border-dark-700">
+        <div class="max-w-5xl mx-auto px-4">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                
+                <!-- Redesigned Centered Opening Hours Card -->
+                <div class="bg-dark-800/80 rounded-3xl border border-dark-700/80 p-6 sm:p-8 flex flex-col items-center text-center shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent"></div>
+                    
+                    <div class="w-14 h-14 bg-gold-400/10 rounded-2xl flex items-center justify-center text-gold-400 mb-4 border border-gold-400/20">
+                        <i data-lucide="clock" class="w-7 h-7"></i>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-1">שעות פעילות</h3>
+                    <p class="text-sm text-gray-400 mb-6">אין צורך לקבוע תור – פשוט מגיעים!</p>
+
+                    <div class="w-full space-y-3">
+                        <!-- Days Row 1 -->
+                        <div class="bg-dark-900/60 p-3.5 rounded-2xl border border-dark-700/60 flex items-center justify-between px-5">
+                            <span class="font-bold text-white">ימים א׳ - ה׳</span>
+                            <span dir="ltr" class="font-mono font-bold text-emerald-400 text-base bg-emerald-950/40 px-3 py-1 rounded-lg border border-emerald-500/20">09:30 - 20:00</span>
+                        </div>
+
+                        <!-- Days Row 2 -->
+                        <div class="bg-dark-900/60 p-3.5 rounded-2xl border border-dark-700/60 flex items-center justify-between px-5">
+                            <span class="font-bold text-white">יום שישי</span>
+                            <span dir="ltr" class="font-mono font-bold text-emerald-400 text-base bg-emerald-950/40 px-3 py-1 rounded-lg border border-emerald-500/20">09:00 - 15:00</span>
+                        </div>
+
+                        <!-- Days Row 3 -->
+                        <div class="bg-dark-900/60 p-3.5 rounded-2xl border border-dark-700/60 flex items-center justify-between px-5">
+                            <div class="text-right">
+                                <span class="font-bold text-white block">מוצ״ש (חורף)</span>
+                                <span class="text-xs text-gray-400">שעה מצאת שבת</span>
+                            </div>
+                            <span dir="ltr" class="font-mono font-bold text-emerald-400 text-base bg-emerald-950/40 px-3 py-1 rounded-lg border border-emerald-500/20">עד 22:00</span>
+                        </div>
+
+                        <!-- Days Row 4 -->
+                        <div class="bg-dark-900/40 p-3.5 rounded-2xl border border-dark-700/40 flex items-center justify-between px-5">
+                            <span class="font-bold text-gray-400">מוצ״ש (קיץ)</span>
+                            <span class="font-bold text-rose-400/90 text-sm bg-rose-950/30 px-3 py-1 rounded-lg border border-rose-500/20">סגור</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Redesigned Centered Location & Contact Card -->
+                <div class="bg-dark-800/80 rounded-3xl border border-dark-700/80 p-6 sm:p-8 flex flex-col items-center text-center shadow-xl justify-between relative overflow-hidden">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-emerald-500 to-transparent"></div>
+
+                    <div class="w-full flex flex-col items-center">
+                        <div class="w-14 h-14 bg-gold-400/10 rounded-2xl flex items-center justify-center text-gold-400 mb-4 border border-gold-400/20">
+                            <i data-lucide="map-pin" class="w-7 h-7"></i>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-white mb-1">איך מגיעים אלינו?</h3>
+                        <p class="text-sm text-gray-400 mb-5">קניון מודיעין</p>
+
+                        <!-- Centered Location Details -->
+                        <div class="w-full space-y-3 mb-6">
+                            <div class="bg-dark-900/60 p-4 rounded-2xl border border-dark-700/60 flex flex-col items-center gap-1">
+                                <div class="flex items-center gap-2 text-gold-400 font-bold text-base">
+                                    <i data-lucide="building" class="w-4 h-4"></i>
+                                    <span>מיקום המספרה בקניון</span>
+                                </div>
+                                <p class="text-gray-200 text-sm font-medium">קומה 1- בחניון התת-קרקעי</p>
+                                <p class="text-gray-400 text-xs mt-0.5">מימין למעלית לבית שמעון ("בית הרופאים")</p>
+                            </div>
+
+                            <!-- Waze/Google Maps Navigation Button -->
+                            <a href="https://share.google/ISBID6iQmqXAybRG9" target="_blank" rel="noopener noreferrer" 
+                               class="w-full inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-400 text-black font-bold py-3 px-6 rounded-2xl transition-all shadow-md group">
+                                <i data-lucide="navigation" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                                <span>לחץ כאן לניווט למספרה</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Buttons Block -->
+                    <div class="w-full border-t border-dark-700/80 pt-5">
+                        <p class="text-xs text-gray-400 mb-3 font-medium">דרכי התקשרות ישיבות</p>
+                        <div class="grid grid-cols-2 gap-2.5 text-xs">
+                            <a href="tel:0559704974" class="flex items-center justify-center gap-2 bg-dark-900/80 hover:bg-dark-700 text-gray-200 hover:text-white p-2.5 rounded-xl border border-dark-700/70 transition-all">
+                                <i data-lucide="phone" class="w-4 h-4 text-gold-400"></i>
+                                <span class="font-semibold">055-9704974</span>
+                            </a>
+
+                            <a href="https://wa.me/972527833122" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-dark-900/80 hover:bg-dark-700 text-emerald-400 hover:text-emerald-300 p-2.5 rounded-xl border border-dark-700/70 transition-all">
+                                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                                <span class="font-semibold">וואטסאפ</span>
+                            </a>
+
+                            <a href="https://www.instagram.com/dekel_barber?igsh=MWx5M2Vma3VuY2drcg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-dark-900/80 hover:bg-dark-700 text-pink-400 hover:text-pink-300 p-2.5 rounded-xl border border-dark-700/70 transition-all">
+                                <i data-lucide="instagram" class="w-4 h-4 text-pink-500"></i>
+                                <span class="font-semibold">Dekel Barber</span>
+                            </a>
+
+                            <a href="mailto:jak1964256@gmail.com" class="flex items-center justify-center gap-2 bg-dark-900/80 hover:bg-dark-700 text-gray-300 hover:text-gold-400 p-2.5 rounded-xl border border-dark-700/70 transition-all">
+                                <i data-lucide="mail" class="w-4 h-4 text-gold-400"></i>
+                                <span class="font-semibold truncate">אימייל</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-xs text-gray-500 border-t border-dark-700">
+        <p>© כל הזכויות שמורות למספרת ג׳קי ודקל • 13 שנות מצוינות</p>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
